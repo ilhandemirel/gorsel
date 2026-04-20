@@ -26,6 +26,30 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
     jlDurum.setText("Durum: Toplam " + jtaMemberList.getLineCount() + " satır bulunmaktadır ! ");
 
 }
+//KASA SORUSU
+private void btnHesaplaActionPerformed(java.awt.event.ActionEvent evt) {
+    
+    // 1. Kutulardaki yazıları alıp küsuratlı sayıya (Double) çeviriyoruz
+    double toplam = Double.parseDouble(txtToplam.getText());
+    double odenen = Double.parseDouble(txtOdenen.getText());
+    
+    // 2. Kalan miktarı hesaplıyoruz
+    double kalan = toplam - odenen;
+    
+    // 3. Bulduğumuz sayıyı tekrar metne çevirip Kalan kutusuna (jTextField1) yazdırıyoruz
+    jTextField1.setText(String.valueOf(kalan));
+
+}
+
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    /*
+    Doviz kuru double bir sayı olmalıdır.Doviz kuru ve doviz miktarı
+    double bir sayı olarak parse edilir ve dönüştürülen değer geçici
+    bir değişkene aktarılır.
+    */
+    double sonuc= Double.parseDouble(jTextField1.getText())*Double.parseDouble(jTextField2.getText());
+    jLabel1.setText("Doviziniz " + sonuc+ "TL'dir. " );
+}
 
 //1. Olay Tabanlı Programlama (Event-Driven Programming) Nedir?
 /*Geleneksel programlar yukarıdan aşağı çalışıp biter. Olay tabanlı
