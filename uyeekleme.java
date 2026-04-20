@@ -26,3 +26,35 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
     jlDurum.setText("Durum: Toplam " + jtaMemberList.getLineCount() + " satır bulunmaktadır ! ");
 
 }
+
+//1. Olay Tabanlı Programlama (Event-Driven Programming) Nedir?
+/*Geleneksel programlar yukarıdan aşağı çalışıp biter. Olay tabanlı
+programlar ise açılır ve kullanıcının bir eylem yapmasını (örneğin butona tıklamasını) bekler.
+Tıklama "olayı" gerçekleşince sadece o butona ait kod bloğu çalışır.*//
+
+//2. NetBeans ile Eclipse Arasındaki Farklar Nelerdir?
+/*NetBeans: Özellikle görsel arayüz (GUI) tasarımı yapmak için harikadır. 
+İçinde varsayılan olarak gelen "Matisse" aracı sayesinde
+butonları, kutuları sürükle-bırak yöntemiyle çok kolay yerleştirirsiniz.
+Yeni başlayanlar ve hızlı arayüz tasarlamak isteyenler için idealdir.
+
+Eclipse: Daha çok kurumsal projelerde tercih edilen, devasa bir eklenti (plugin) havuzuna
+sahip olan bir ortamdır. Ancak varsayılan halinde sürükle-bırak arayüz tasarımı yoktur;
+görsel tasarım yapabilmek için sonradan eklenti (örneğin WindowBuilder) kurmak gerekir.*/
+
+//AWT ve Swing Kütüphaneleri Arasındaki Fark Nedir?
+/*AWT (Abstract Window Toolkit): Eski nesildir. İşletim sisteminin 
+kendi grafik araçlarını kullanır (Ağır bileşenler). Bu yüzden yazdığınız
+program Windows'ta farklı, Mac'te farklı görünür.
+
+Swing: AWT'nin üzerine geliştirilmiş, tamamen Java ile yazılmış modern
+kütüphanedir (Hafif bileşenler). İşletim sisteminden bağımsızdır,
+program her bilgisayarda aynı görünür. Sınavda kullandığınız JButton, JTextField 
+gibi başında "J" olan nesneler Swing nesneleridir.*/
+
+//Component (Bileşen) ve Container (Kapsayıcı) Farkı Nedir?
+/*Component (Bileşen): Ekranda gördüğümüz, tek başına bir işlevi olan bağımsız nesnelerdir.
+(Örnek: Buton, metin kutusu, etiket).
+
+Container (Kapsayıcı): Bu bileşenleri içine koyduğumuz, onları bir arada tutup düzenleyen
+taşıyıcı kutulardır. (Örnek: Arka plan paneli olan JPanel veya pencerenin kendisi olan JFrame).*/
